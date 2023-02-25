@@ -11,3 +11,5 @@ func main() {
 	fmt.Println("testng module...")
       _ = mux.Route{}
 }
+ //fmt.println("testing module...")
+//  _=mux.rout{}
