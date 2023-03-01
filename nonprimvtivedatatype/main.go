@@ -5,26 +5,41 @@ import "fmt"
 type student struct {
 	Name           string
 	Class          int
-	Rollnumber     string
-	studentAddress Address
+	Rollnum        string
+	studentaddress address
 }
-type Address struct {
-	Vill string
-	Dist string
-	Post string
+type address struct {
+	Lane1 string
+	Post  string
+	Dist  string
+	Vill  string
 }
 
 func main() {
-	Collage := student{
-		Name:       "SHivam Singh",
-		Class:      12,
-		Rollnumber: "8309238209",
-		studentAddress: Address{
-			Vill: "sawara ",
-			Dist: "Bhadohi",
-			Post: "Aurai",
+	Shivam := student{
+		Name:    "Shivam singh",
+		Class:   12,
+		Rollnum: "62769",
+		studentaddress: address{
+			Lane1: "NH2",
+			Post:  "Aurai",
+			Dist:  "bhadohi",
+			Vill:  "Sawara ",
 		},
 	}
-	fmt.Println("hello team...collage student'struct", Collage)
+	val:=122
+	val2:="22782"
+	var interfaceExample interface{}
+
+		interfaceExample = val
+		fmt.Println("interface value =",interfaceExample)
+		interfaceExample = val2
+		fmt.Println("interface value =",interfaceExample)
+		interfaceExample = false 
+		fmt.Println("interface value =", interfaceExample)
+	
+	fmt.Println("hello team.....boys's struct", Shivam)
 
 }
+
+
